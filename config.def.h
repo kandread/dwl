@@ -29,7 +29,7 @@ static int log_level = WLR_ERROR;
 
 /* Autostart */
 static const char *const autostart[] = {
-        "wbg", "~/Pictures/jon-del-rivero-k9O9aODIPjE-unsplash.jpg", NULL,
+        "wbg", "/home/kandread/Pictures/jon-del-rivero-k9O9aODIPjE-unsplash.jpg", NULL,
         NULL /* terminate */
 };
 
@@ -38,8 +38,8 @@ static const char *const autostart[] = {
 static const Rule rules[] = {
         /* app_id             title       tags mask     isfloating   monitor */
         /* examples: */
-        { "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /* Start on currently visible tags floating, not tiled */
-        { "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /* Start on ONLY tag "9" */
+        /* { "Gimp_EXAMPLE",     NULL,       0,            1,           -1 }, /\* Start on currently visible tags floating, not tiled *\/ */
+        /* { "firefox_EXAMPLE",  NULL,       1 << 8,       0,           -1 }, /\* Start on ONLY tag "9" *\/ */
 };
 
 /* layout(s) */
@@ -62,7 +62,7 @@ static const MonitorRule monrules[] = {
         { "eDP-1",    0.5f,  1,      2,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
         */
         /* defaults */
-        { NULL,       0.55f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
+        { NULL,       0.55f, 1,      1.75,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL,   -1,  -1 },
 };
 
 /* keyboard */
